@@ -26,28 +26,31 @@
     <th>Problem</th>
   </tr>
   <tr>
-    <td>1/23(목)</td>
+    <td>1/23</td>
     <td><a href="https://www.acmicpc.net/problem/2468">2468 안전영역</a></td>
   </tr>
 
   <tr>
-    <td>1/28(화)</td>
-    <td><a href="https://www.youtube.com/watch?v=1vLqC1rItM8">DFS의 이해</td><br>
-    <td><a href="https://www.youtube.com/watch?v=CJiF-muKz30">BFS의 이해</td>
+    <td>1/28</td>
+    <td>
+      <a href="https://www.youtube.com/watch?v=1vLqC1rItM8">DFS의 이해</a>
+      <br>
+      <a href="https://www.youtube.com/watch?v=CJiF-muKz30">BFS의 이해</a>  
+    </td>
   </tr> 
 
   <tr>
-    <td>2/6(목)</td>
+    <td>2/6</td>
     <td><a href="https://www.acmicpc.net/problem/2504">2504 괄호의 값</a></td>
   </tr>
 
   <tr>
-    <td>2/11(화)</td>
+    <td>2/11</td>
     <td><a href="https://www.youtube.com/watch?v=-ARJQv_aBE8">BackTracking의 이해</td>
   </tr> 
 
   <tr>
-    <td>2/25(화)</td>
+    <td>2/25</td>
     <td>월말 Review session</td>
   </tr> 
 
