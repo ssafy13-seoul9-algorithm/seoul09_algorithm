@@ -15,7 +15,9 @@
 
 
 # 주차별 진행 상황
+
 <details>
+  <p>(예시)</p><br>
   <summary>1월</summary>
 
 <table>
@@ -24,29 +26,29 @@
     <th>Problem</th>
   </tr>
   <tr>
-    <td>날짜1-1</td>
+    <td>1/23(목)</td>
     <td><a href="https://www.acmicpc.net/problem/2468">2468 안전영역</a></td>
   </tr>
 
   <tr>
-    <td>날짜1-2</td>
-    <td><a href="https://www.youtube.com/watch?v=1vLqC1rItM8">DFS의 이해</td>
+    <td>1/28(화)</td>
+    <td><a href="https://www.youtube.com/watch?v=1vLqC1rItM8">DFS의 이해</td><br>
     <td><a href="https://www.youtube.com/watch?v=CJiF-muKz30">BFS의 이해</td>
   </tr> 
 
   <tr>
-    <td>날짜2-1</td>
+    <td>2/6(목)</td>
     <td><a href="https://www.acmicpc.net/problem/2504">2504 괄호의 값</a></td>
   </tr>
 
   <tr>
-    <td>날짜2-2</td>
+    <td>2/11(화)</td>
     <td><a href="https://www.youtube.com/watch?v=-ARJQv_aBE8">BackTracking의 이해</td>
   </tr> 
 
   <tr>
-    <td>월말</td>
-    <td>Review session</td>
+    <td>2/25(화)</td>
+    <td>월말 Review session</td>
   </tr> 
 
 </table>
