@@ -23,15 +23,18 @@
 <table>
   <tr>
     <th>Date</th>
+    <th>Category</th>
     <th>Problem</th>
   </tr>
   <tr>
-    <td>1/23</td>
+    <td>1.23</td>
+    <td>문제풀이</td>    
     <td><a href="https://www.acmicpc.net/problem/2468">2468 안전영역</a></td>
   </tr>
 
   <tr>
-    <td>1/28</td>
+    <td>1.28</td>
+    <td>코드 리뷰</td>
     <td>
       <a href="https://www.youtube.com/watch?v=1vLqC1rItM8">DFS의 이해</a>
       <br>
@@ -40,18 +43,25 @@
   </tr> 
 
   <tr>
-    <td>2/6</td>
+    <td>2.6</td>
+    <td>문제풀이</td>    
     <td><a href="https://www.acmicpc.net/problem/2504">2504 괄호의 값</a></td>
   </tr>
 
   <tr>
-    <td>2/11</td>
+    <td>2.11</td>
+    <td>코드 리뷰</td> 
     <td><a href="https://www.youtube.com/watch?v=-ARJQv_aBE8">BackTracking의 이해</td>
   </tr> 
 
   <tr>
-    <td>2/25</td>
-    <td>월말 Review session</td>
+    <td>2.25</td>
+    <td>월말리뷰</td> 
+    <td>
+      월말 Review session
+      <br>
+      한달간 어려웠던 내용만 리뷰뷰
+    </td>
   </tr> 
 
 </table>
@@ -96,5 +106,3 @@
     <li>4. 배낭 문제 (Knapsack Problem)</li>
   </ul>
 </details>
-
-## 노션 장인 최강동안스터디장님께서 추가적인 목록을 작성해주세용...
