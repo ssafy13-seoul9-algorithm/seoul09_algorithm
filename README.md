@@ -16,7 +16,7 @@
 
 # 주차별 진행 상황
 <details>
-  <summary>8월</summary>
+  <summary>1월</summary>
 
 <table>
   <tr>
