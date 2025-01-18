@@ -23,7 +23,7 @@ public class w1_1486_김우준 {
             for (int i = 1; i < (1 << N); i++) {
                 int sum = 0;
                 for (int j = 0; j < N; j++) {
-                    if (i & (1 << j)) {
+                    if ((i & (1 << j)) != 0) {
                         sum += arr[j];
                     }
                 }
