@@ -12,6 +12,11 @@ find "$base_dir" -type f -name "*.java" | while read -r java_file; do
         continue
     fi
 
+    if git diff --quiet "$java_file"; then
+        echo "No changes in $file_name. Skipping..."
+	continue
+    fi
+
     commit_message="add: solution for SWEA #$num"
     
     echo "Processing: $file_name"
