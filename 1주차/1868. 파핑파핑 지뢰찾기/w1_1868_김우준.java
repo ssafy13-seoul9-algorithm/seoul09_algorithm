@@ -54,7 +54,7 @@ public class w1_1868_김우준 {
             String[][] arr = new String[N][N];
             boolean[][] flag_arr = new boolean[N][N];
 
-            // 배열에 문자할당 flag 배열 초기화
+            // 배열에 문자할당 flag 배열 초기화 
             for (int i = 0; i < N; i++) {
                 String[] str = sc.nextLine().split("");
                 for (int j = 0; j < N; j++) {
