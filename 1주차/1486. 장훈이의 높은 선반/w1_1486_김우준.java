@@ -39,7 +39,7 @@ public class w1_1486_김우준 {
                     }
                 }
 
-                // 합이 B보다 크고, result 보다 작을 경우 result에 할당
+                // 합이 B보다 크고, result 보다 작을 경우 result에 할당 
                 if (sum > B) {
                     if (sum < result) {
                         result = sum;
