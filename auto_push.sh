@@ -6,9 +6,9 @@ find "$base_dir" -type f -name "*.java" | while read -r java_file; do
     file_name=$(basename "$java_file")
 
     num=$(echo "$file_name" | grep -oP 'w[0-9]_\K[0-9]+')
-    user_name=$(echo "$file_name" | grep -oP '\K김우준')
+    user_name=$(echo "$file_name" | grep -oP '\K[USER_NAME]')
 
-    if [ "$user_name" != "김우준" ]; then
+    if [ "$user_name" != "[USER_NAME]" ]; then
         continue
     fi
 
