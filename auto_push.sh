@@ -6,15 +6,18 @@ find "$base_dir" -type f -name "*.java" | while read -r java_file; do
     file_name=$(basename "$java_file")
 
     num=$(echo "$file_name" | grep -oP 'w[0-9]_\K[0-9]+')
+    user_name=$(echo "$file_name" | grep -oP '\K김우준')
+
+    if [ "$user_name" != "김우준" ]; then
+        continue
+    fi
 
     if [ -z "$num" ]; then
-        echo "Warning: Could not extract #NUM from $file_name. Skipping.."
         continue
     fi
 
     if git diff --quiet "$java_file"; then
-        echo "No changes in $file_name. Skipping..."
-	continue
+	    continue
     fi
 
     commit_message="add: solution for SWEA #$num"
