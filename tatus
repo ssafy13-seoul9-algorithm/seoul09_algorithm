@@ -1,0 +1,296 @@
+[33mcommit 12cb8e36f4d5b24233c031e0bfa05b5e8d016453[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: AhiamYeong <toktto@gmail.com>
+Date:   Tue Jan 21 17:32:08 2025 +0900
+
+    add: solution for SWEA #2063
+
+[33mcommit f69dbd0c74b17f9fb3ec16fe26ce234bb9ef8d50[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: AhiamYeong <toktto@gmail.com>
+Date:   Tue Jan 21 17:05:06 2025 +0900
+
+    Docs: update
+
+[33mcommit 038e04c3fc3e7812254efccbfc089d144c0dde09[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 17:00:10 2025 +0900
+
+    fix: add USER_NAME identifier, remove skip text
+
+[33mcommit 2b43f648cd8e30eca3fb475d6eaaa715bca9f8a3[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 16:58:10 2025 +0900
+
+    fix: add USER_NAME identifier, remove skip text
+
+[33mcommit 7d3f10d8000e03abe703e7ae906999f7c0856e9e[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 16:54:49 2025 +0900
+
+    add: solution for SWEA #4193
+
+[33mcommit e16970ae46d2eb776c243624eaaa3e22d497acc1[m
+Author: HOJEONGKIMM <khj15263245@gmail.com>
+Date:   Tue Jan 21 15:21:23 2025 +0900
+
+    Feat : 1주차 김호정
+
+[33mcommit e1316ce357e125eddb7357725adde7249e1eab1b[m
+Author: jsonsvalue <hellojaeseok@naver.com>
+Date:   Tue Jan 21 14:52:22 2025 +0900
+
+    Solutions for SWEA
+
+[33mcommit c77a46ba7bae4d6c7345b970dd6f346dc897279c[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Tue Jan 21 01:16:09 2025 +0900
+
+    add: solution for SWEA #1486
+
+[33mcommit b9d8bdfa251e990ffbddafdb057e68977bda5344[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 01:00:34 2025 +0900
+
+    add: solution for SWEA #1868
+
+[33mcommit a7c228dd9d04daca95c08e085e27ed00e3486f3e[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 01:00:33 2025 +0900
+
+    add: solution for SWEA #1486
+
+[33mcommit 83c37680a4e567c76fbee2f6c46e077567bdcf44[m
+Merge: f77873e 1c7cb38
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 00:59:01 2025 +0900
+
+    Merge branch 'main' of https://github.com/ssafy13-seoul9-algorithm/seoul09_algorithm
+
+[33mcommit f77873ebb71dc14ebb6240352a7a61bd838a4dd8[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 00:54:32 2025 +0900
+
+    add: solution for SWEA #1868
+
+[33mcommit 69d326803d03b0083dd047ff60109cf9b4c94bef[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Tue Jan 21 00:54:31 2025 +0900
+
+    add: solution for SWEA #1486
+
+[33mcommit 1c7cb388c514cfa254574b8ab19cc5e7b2434d17[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Mon Jan 20 17:01:40 2025 +0900
+
+    add: solution for SWEA #1868
+
+[33mcommit 88d1b5ca59e55327882dfb5e6966fb4bb58da218[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Sun Jan 19 21:53:27 2025 +0900
+
+    add: soultion for SWEA #12712
+
+[33mcommit feca272d18ee043c92c92af8d8a5b6f77576d76f[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Sun Jan 19 21:52:50 2025 +0900
+
+    add: solution for SWEA #1936
+
+[33mcommit 66dd099dcc57a41cd6b17cc61fbf96b6057c6cd6[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Sun Jan 19 21:52:07 2025 +0900
+
+    add: solution for SWEA #1959
+
+[33mcommit 2cb1f1014e45b28793bda0e7bdbf6f2cad709cdc[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Sun Jan 19 21:51:15 2025 +0900
+
+    add: solution for SWEA #1961
+
+[33mcommit 6f12ee8be1210c7e90bc292701862389a122be7c[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Sun Jan 19 21:50:10 2025 +0900
+
+    add: soultion for SWEA #2058
+
+[33mcommit 131a6f1adcd8d624d62dbe6b2ba12d66b71855ad[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Sun Jan 19 21:49:28 2025 +0900
+
+    add: solution for SWEA #2063
+
+[33mcommit d7344f2dd7acda6ea395c969ca145e28aaed3b16[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Sun Jan 19 21:37:16 2025 +0900
+
+    add: solution for SWEA #4193
+
+[33mcommit 3d525f0a6366120cd4c4e817100efde4d290e89c[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 20:35:50 2025 +0900
+
+    fix: add logic to prevent duplicate uploads
+
+[33mcommit 87a6b9ecb07b109124df5bc02611a355ccff4c1f[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:50:21 2025 +0900
+
+    feat: add auto push script
+
+[33mcommit 81498201357b38dcbbf501feb2a7703f6528b9f2[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:46:16 2025 +0900
+
+    add: solution for SWEA #1868
+
+[33mcommit 882e0287ebfc9dab0692c3925a45faa0f3f67c16[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:46:15 2025 +0900
+
+    add: solution for SWEA #12712
+
+[33mcommit 6b1ec0a2df05da2f8c4206936e70ae95da9d4a18[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:46:13 2025 +0900
+
+    add: solution for SWEA #1486
+
+[33mcommit 54c5d232487f85bed52637f08b2247e2a665736a[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:17:01 2025 +0900
+
+    add: solution for SWEA #1936
+
+[33mcommit bf886048967d2e86ef39d10969991f2a560e085e[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:16:54 2025 +0900
+
+    add: solution for SWEA #1868
+
+[33mcommit f8139df109ff6f9c952396d707412ba97b712996[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:16:48 2025 +0900
+
+    add: solution for SWEA #1959
+
+[33mcommit 4a80464116a39c35781985cc8872312cad14fa13[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:16:43 2025 +0900
+
+    add: solution for SWEA #12712
+
+[33mcommit bf3a0c9fd2537937b22500bb84223622476bd579[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:16:36 2025 +0900
+
+    add: solution for SWEA #2058
+
+[33mcommit abbbf6a8c6ac6c53ed366b235eec98585cf8262b[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:16:26 2025 +0900
+
+    add: solution for SWEA #2063
+
+[33mcommit 244491f28a8cbd990eeb0626591edbde76528d4a[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:16:12 2025 +0900
+
+    add: solution for SWEA #1486
+
+[33mcommit e4accc675676f53012f225cee1dd7f0db2eb70c2[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Sat Jan 18 17:13:27 2025 +0900
+
+    add: solution for SWEA #1961
+
+[33mcommit 8a60df29d59833cd81e8b86a53fd42151d4e5f8f[m
+Author: HOJEONGKIMM <by08035@naver.com>
+Date:   Fri Jan 17 23:54:33 2025 +0900
+
+    Docs : 커밋 규칙 수정
+
+[33mcommit aff4c3fa5b703c5ac94b804b27075f78aa0a7b00[m
+Author: HOJEONGKIMM <by08035@naver.com>
+Date:   Fri Jan 17 23:14:34 2025 +0900
+
+    Docs : README.md 파일 수정
+
+[33mcommit aea3c845807b2c3fbe1823647c0afcfc67e80ea0[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Fri Jan 17 16:18:35 2025 +0900
+
+    1주차 - SWEA 사전문제 업데이트
+
+[33mcommit abeb08c2ef8a806d29a8dbf344dfc898af03d6b6[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 12:46:45 2025 +0900
+
+    Update README.md
+
+[33mcommit c9f56e3658bfb8acd166721dbe08124ac5ca53dc[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 12:45:30 2025 +0900
+
+    Update README.md
+
+[33mcommit f0b478ff5a0e007dcd218ba30d06a8b8014a07fb[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 12:43:37 2025 +0900
+
+    Update README.md
+
+[33mcommit 2c1eab98f24292e525da9b3394bfdc290d789de2[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 11:35:33 2025 +0900
+
+    Update README.md
+
+[33mcommit bc941538d05d72b9a56a1904a66f41f75d4e393e[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 11:35:10 2025 +0900
+
+    Update README.md
+
+[33mcommit 51252f9fdd279492fa4f1d58678bec7867acb0ec[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 11:22:41 2025 +0900
+
+    Update README.md
+
+[33mcommit 84bd47bdd6cdb0c1a5684b5293e38130086758d8[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 11:15:54 2025 +0900
+
+    Update README.md
+
+[33mcommit b6b5f70bcfa1253677ff173e58cbda87061a977d[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 11:03:30 2025 +0900
+
+    Update README.md
+
+[33mcommit d01dec4baa8b784f0ff2cd52e819fb8b046f3a89[m
+Author: jsonsvalue <54315562+jsonsvalue@users.noreply.github.com>
+Date:   Fri Jan 17 11:02:53 2025 +0900
+
+    Update README.md
+    
+    주차별 진행상황, 주제별 분류 업데이트
+
+[33mcommit 932534a14b95ce495db3321778af1216508c14aa[m
+Author: woojun-k <kwoojun.eng@gmail.com>
+Date:   Fri Jan 17 09:32:16 2025 +0900
+
+    Update README.md
+
+[33mcommit 05d5bff0ffc31a480b1c40e06e1041ea15e9456a[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Fri Jan 17 09:17:46 2025 +0900
+
+    Update README.md
+
+[33mcommit fa1be56e2c3e533736a7e2f392cc64223c91bc80[m
+Author: Jonghwan Lee <123362165+0224LJH@users.noreply.github.com>
+Date:   Fri Jan 17 09:09:18 2025 +0900
+
+    Initial commit
