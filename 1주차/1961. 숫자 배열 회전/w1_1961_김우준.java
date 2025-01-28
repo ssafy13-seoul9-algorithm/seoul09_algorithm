@@ -17,7 +17,7 @@ public class w1_1961_김우준 {
             for (int d = 1; d < 4; d++) {
                 for (int i = n; i > 0; i--) {
                     for (int j = 0; j < n; j++) {
-                        arr[d][j][i-1] = arr[d-1][Math.abs(i - n)][j]; 					
+                        arr[d][j][i-1] = arr[d-1][Math.abs(i - n)][j];
                     }
                 }
             }
