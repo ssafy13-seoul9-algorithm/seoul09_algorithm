@@ -10,6 +10,7 @@ find "$base_dir" -type f -name "*.java" | while read -r java_file; do
 
     if [ "$user_name" != "[USER_NAME]" ]; then
         continue
+
     fi
 
     if [ -z "$num" ]; then
