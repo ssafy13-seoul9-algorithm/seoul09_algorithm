@@ -35,15 +35,15 @@ ex) w1_1234_홍길동.java
       
 <br>
 
-4. [n 주차 목요일]: n 주차 화요일까지 못 풀었던 ${\textsf{\color{tan}문제들}}$에 대해 마저 이야기 한다.
+4. [n주차 목요일]: n 주차 화요일까지 못 풀었던 ${\textsf{\color{tan}문제들}}$에 대해 마저 이야기 한다.
 
 <br>
 
-5. [n 주차 목요일]: 이후 ${\textsf{\color{lightpink}n+1주차 관련  풀이법 (알고리즘 기법)}}$에 대한 수업을 진행한다.
+5. [n주차 목요일]: 이후 ${\textsf{\color{lightpink}n+1주차 관련  풀이법 (알고리즘 기법)}}$에 대한 수업을 진행한다.
    
 <br>
 
-7. [n 주차 목요일]: ${\textsf{\color{lightpink}week n+1 과제}}$를 공지하며 스터디를 n주차 스터디를 종료한다.
+7. [n주차 목요일]: ${\textsf{\color{lightpink}week n+1 과제}}$를 공지하며 스터디를 n주차 스터디를 종료한다.
    
 </aside>
 
