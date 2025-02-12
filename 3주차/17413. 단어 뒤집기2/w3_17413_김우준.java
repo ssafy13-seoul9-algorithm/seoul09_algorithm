@@ -8,6 +8,8 @@ public class Main {
         int end = 0;
         boolean flag = false;
         boolean rev = true;
+
+        input.length / 2
         for (int i = 0; i < input.length; i++) {
             if (flag) {
                 if (input[i].equals(">")) {
