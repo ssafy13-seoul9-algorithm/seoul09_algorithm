@@ -9,7 +9,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 
-public class w5_14940_이종환
+public class w5_7576_이종환
 {
 	public static void main(String args[]) throws Exception
 	{
@@ -17,44 +17,49 @@ public class w5_14940_이종환
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		StringTokenizer st = new StringTokenizer(br.readLine());
-		int width = Integer.parseInt(st.nextToken());
 		int height = Integer.parseInt(st.nextToken());
+		int width = Integer.parseInt(st.nextToken());
 		
 		int[] dy = {1,0,-1,0};
 		int[] dx = {0,1,0,-1};
 		
 		//지도와 visited 생성
 		int[][] arr = new int[height][width];
+		int[][] distances = new int[height][width];
 		boolean[][] visited = new boolean[height][width];
 
 		
-		Queue<Integer> qY = new LinkedList<Integer>();
-		Queue<Integer> qX = new LinkedList<Integer>();
-		
-		int totalTomatoCnt = height * width;
-		int tomatoCnt = 0; // 익거나 못가는 곳 개수
+		int startY = -1;
+		int startX = -1;
 		
 		for (int i = 0; i < height; i++) {
 			st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < width; j++) {
 				arr[i][j] = Integer.parseInt(st.nextToken());
 				// 바다는 이미 방문한 것으로 간주
-				if (arr[i][j] != 0 ) {
-					// 갈수 없는 곳이거나, 익은 토마토일때
-					if (arr[i][j] == 1) {
-						qY.add(i);
-						qX.add(j);
+				if (arr[i][j] != 1 ) {
+					// 갈수 없는 곳이거나, 목표지점일때
+					if (arr[i][j] == 2) {
+						startY = i;
+						startX = j;
 					}
-					tomatoCnt++;
 					visited[i][j] = true;
-				} 
+				} else {
+					distances[i][j] = -1;
+				}
 			}
 		}
 		
+
+		Queue<Integer> qY = new LinkedList<Integer>();
+		Queue<Integer> qX = new LinkedList<Integer>();
 		
-		int time = 0;
+		qY.add(startY);
+		qX.add(startX);
 		
-		while(!qY.isEmpty() && tomatoCnt != totalTomatoCnt) {
+		int time = 1;
+		
+		while(!qY.isEmpty()) {
 			int qSize = qY.size();
 			
 			for (int i = 0; i < qSize; i++) {
@@ -69,8 +74,9 @@ public class w5_14940_이종환
 							|| targetX >= width || visited[targetY][targetX]) {
 						continue;
 					}
-					tomatoCnt++;
+					
 					visited[targetY][targetX] = true;
+					distances[targetY][targetX] = time;
 					
 					qY.add(targetY);
 					qX.add(targetX);
@@ -79,11 +85,16 @@ public class w5_14940_이종환
 			time++;
 		}
 		
-		
-		if (tomatoCnt != totalTomatoCnt) {
-			System.out.println(-1);
-		} else {
-			System.out.println(time);
+		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < height; i++) {
+			for (int j = 0; j < width; j++) {
+				sb.append(distances[i][j]).append(" ");
+			}
+			sb.append("\n");
 		}
+		
+		System.out.print(sb.toString());
+			
+	
 	}
 }
