@@ -9,7 +9,7 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 
-public class w5_7576_이종환
+public class w5_14950_이종환
 {
 	public static void main(String args[]) throws Exception
 	{
@@ -36,7 +36,6 @@ public class w5_7576_이종환
 			st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < width; j++) {
 				arr[i][j] = Integer.parseInt(st.nextToken());
-				// 바다는 이미 방문한 것으로 간주
 				if (arr[i][j] != 1 ) {
 					// 갈수 없는 곳이거나, 목표지점일때
 					if (arr[i][j] == 2) {
