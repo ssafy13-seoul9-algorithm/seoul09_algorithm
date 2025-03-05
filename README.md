@@ -47,42 +47,5 @@ ex) w1_1234_홍길동.java
    
 </aside>
 
-# 주제별 분류
 
-<details>
-  <summary>1주차 주제</summary>
-  <br>
-  <ul>
-    <li>1. 단순 구현</li>
-    <li>2. 재귀함수</li>
-    <li>3. 정렬</li>
-    <li>4. 완전 탐색, 이분 탐색</li>
-    <li>5. 분할 정복</li>
-    <li>6. 스택, 큐</li>
-    <li>7. 우선순위 큐</li>
-  </ul>
-</details>
-
-<details>
-  <summary>2주차 주제</summary>
-  <br>
-  <ul>
-    <li>1. DFS, BFS</li>
-    <li>2. 위상 정렬</li>
-    <li>3. 최소 신장 트리</li>
-    <li>4. 다익스트라, 플로이드 와샬</li>
-    <li>5. Trie</li>
-  </ul>
-</details>
-
-<details>
-  <summary>3주차 주제</summary>
-  <br>
-  <ul>
-    <li>1. 다이나믹 프로그래밍</li>
-    <li>2. 그리디 알고리즘</li>
-    <li>3. LCS (Longest Common Subsequence)</li>
-    <li>4. 배낭 문제 (Knapsack Problem)</li>
-  </ul>
-</details>
 
