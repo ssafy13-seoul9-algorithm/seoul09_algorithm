@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class App {
+public class w9_1331_김우준 {
     static String status = "Invalid";
     static List<String> pos;
     static boolean[][] visited;
