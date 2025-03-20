@@ -33,7 +33,7 @@ public class BJ16924 {
         // 작은 크기의 십자가부터 처리해서, *를 다 처리할 수 있는지를 확인한다.
         for(int i=0; i<N; i++){
             for(int j=0; j<M; j++){
-                if(intArr[i][j] ==1){
+                if(charArr[i][j] =='*'){
                     // 작은 크기의 십자가를 중심으로, 십자가를 처리할 수 있는지를 행렬 기준으로 모두 확인한다.
                     int maxSize = Math.min(Math.min( i - 0, N - 1 - i), Math.min(j-0, M-1-j));
 
@@ -72,7 +72,8 @@ public class BJ16924 {
                             int nx = i+dx[k];
                             int ny = j+dy[k];
 
-                            if(nx >= 0 && nx < N && ny >= 0 && ny < M && intArr[nx][ny]==1){
+                            // 1로 처리된 별을 -1을 해주면 값이 변하기 때문에, charArr을 이용해야 한다.
+                            if(nx >= 0 && nx < N && ny >= 0 && ny < M && charArr[nx][ny]=='*'){
 //                                if (intArr[nx][ny] != 1){
 //                                    isCross = false;
 //                                    break;
