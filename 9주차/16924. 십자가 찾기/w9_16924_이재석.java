@@ -1,106 +1,166 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.util.*;
 
-public class w9_16924_이종환 {
-	
-	static int leftStar, crossCnt, height,width = 0;
-	static int[] dy = {-1,1,0,0};
-	static int[] dx = {0,0,-1,1};
-	static String[][] arr;
-	static boolean[][] visited;
-	static StringBuilder sb = new StringBuilder();
-	
-	public static void main(String[] args) throws IOException {
-		init();
-		process();
-		print();
-	}
-	
-	
-	private static void init() throws IOException {
-		BufferedReader br =  new BufferedReader(new InputStreamReader(System.in));;
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		height = Integer.parseInt(st.nextToken());
-		width = Integer.parseInt(st.nextToken());
-		arr = new String[height][width];
-		visited = new boolean[height][width];
-		
-		for (int i = 0; i < height; i++) {
-			arr[i] = br.readLine().split("");
-			for (int j = 0; j < width; j++) {
-				if (arr[i][j].equals("*")) leftStar++;
-			}
-		}
-	}
-	
-	
-	private static void print() {
-		if (leftStar != 0) {
-			System.out.println("-1");
-		} else {
-			System.out.println(crossCnt);
-			System.out.println(sb.toString());
-		}
-	}
-	
-	
-	private static void process() {
-		for (int i = 0; i < height; i++) {
-			for (int j = 0; j < width; j++) {
-				if (leftStar == 0) break;
-				if (arr[i][j].equals(".")) continue;
-				
-				drawCross(getCrossSize(i,j),i,j);
-			}
-		}
-	}
-	
-	
-	private static int getCrossSize(int y, int x) {
-		int size = Integer.MAX_VALUE;
-		
-		for (int k = 0; k < 4; k++) {
-			int curSize = 1;
-			
-			while(true) {
-				int tY = y + dy[k]*curSize;
-				int tX = x + dx[k]*curSize;
-				
-				if (check(tY,tX)) break;
-				curSize++;
-			}
-			size = Math.min(size, --curSize);
-		}
-		return size;
-	}
-	
-	
-	private static boolean check(int tY,int tX) {
-		if (tY < 0|| tX <0 || tY >= height || tX >= width || arr[tY][tX].equals(".")) return true;
-		return false;
-	}
+public class BJ16924 {
+    // 아이디어 자체는 .만 남아 있을 경우에만, 십자가의 크기 출력하는 것을 멈춘다.
 
-	
-	private static void drawCross(int size,int y, int x) {
-		if (size == 0) return;
-		
-		if (!visited[y][x]) leftStar--;
-		visited[y][x] = true;
-		crossCnt++;
-		sb.append(y+1).append(" ").append(x+1).append(" ").append(size).append("\n");
-		
-		for (int k = 1; k <= size; k++) {
-			for (int l = 0; l < 4; l++) {
-				int tY = y + dy[l]*k;
-				int tX = x + dx[l]*k;
-				
-				if (!visited[tY][tX]) leftStar--;
-				visited[tY][tX] = true;
-			}
-		}
-	}
-	
-	
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt();
+        int M = sc.nextInt();
+        sc.nextLine();
+
+        char[][] charArr = new char[N][M];
+        for(int i=0 ; i<N; i++){
+            charArr[i] = sc.nextLine().toCharArray();
+        }
+
+        // *가 들어 있는 곳을 -1 만큼 처리하고, 하나의 원소라도 1이 존재한다면 실패 처리한다.
+        int[][] intArr = new int[N][M];
+        for(int i = 0; i < N; i++){
+            for(int j = 0; j < M ; j++){
+                if(charArr[i][j]=='*'){
+                    intArr[i][j] = 1;
+                }else{
+                    intArr[i][j] = 0;
+                }
+
+            }
+        }
+
+        // 각 행마다 십자가를 처리할 수 있는지 확인한다.
+        // 십자가의 중심을 기준으로, 위 아래 양 옆으로 *가 존재하는지 확인한다.
+        // 작은 크기의 십자가부터 처리해서, *를 다 처리할 수 있는지를 확인한다.
+        for(int i=0; i<N; i++){
+            for(int j=0; j<M; j++){
+                if(intArr[i][j] ==1){
+                    // 작은 크기의 십자가를 중심으로, 십자가를 처리할 수 있는지를 행렬 기준으로 모두 확인한다.
+                    int maxSize = Math.min(Math.min( i - 0, N - 1 - i), Math.min(j-0, M-1-j));
+
+                    // 가장 작은 크기의 십자가부터 가장 큰 크기의 십자가까지 모두 검사한다.
+                    for(int s = 1 ; s <= maxSize; s++){
+                        // 각 지점에서의 크기에 맞게 dx,dy를 생성해준다.
+                        int[] dx = new int[s * 4];
+                        int[] dy = new int[s * 4];
+
+                        int idx = 0;
+                        // 행에 대한 값을 dx에 더해준다.
+                        for(int k = 1; k <= s; k++){
+                            dx[idx] = k;
+                            dy[idx] = 0;
+                            idx++;
+
+                            dx[idx] = -k;
+                            dy[idx] = 0;
+                            idx++;
+                        }
+
+                        // 열에 대한 값을 dy에 더해준다.
+                        for(int k = 1; k <= s; k++){
+                            dx[idx] = 0;
+                            dy[idx] = k;
+                            idx++;
+
+                            dx[idx] = 0;
+                            dy[idx] = -k;
+                            idx++;
+                        }
+
+                        // 모든 지점에 대해서 십자가 모양을 이룰 때, 해당 지점에 대해 값을 빼준다.
+                        boolean isCross = true;
+                        for(int k = 0; k < s * 4; k++){
+                            int nx = i+dx[k];
+                            int ny = j+dy[k];
+
+                            if(nx >= 0 && nx < N && ny >= 0 && ny < M && intArr[nx][ny]==1){
+//                                if (intArr[nx][ny] != 1){
+//                                    isCross = false;
+//                                    break;
+//                                }
+
+                            }else{
+                                isCross = false;
+                                break;
+                            }
+                        }
+
+                        if(isCross){
+                            System.out.printf("%d %d %d\n", i, j, s);
+                            intArr[i][j] -= 1;
+                            for(int k = 0; k < s * 4; k++) {
+                                int nx = i + dx[k];
+                                int ny = j + dy[k];
+
+                                if (nx >= 0 && nx < N && ny >= 0 && ny < M) {
+                                    intArr[nx][ny] -= 1;
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+            }
+        }
+
+
+        /*int[] dx = new int[8];
+        int[] dy = new int[8];
+
+        int idx = 0;
+        // 행에 대한 값을 dx에 더해준다.
+        for(int k = 1; k <= 2; k++){
+            dx[idx] = k;
+            dy[idx] = 0;
+            idx++;
+
+            dx[idx] = -k;
+            dy[idx] = 0;
+            idx++;
+        }
+
+        // 열에 대한 값을 dy에 더해준다.
+        for(int k = 1; k <= 2; k++){
+            dx[idx] = 0;
+            dy[idx] = k;
+            idx++;
+
+            dx[idx] = 0;
+            dy[idx] = -k;
+            idx++;
+        }
+
+        System.out.println(Arrays.toString(dx));
+        System.out.println(Arrays.toString(dy));*/
+
+
+
+        /*int sizeX = 4;
+        int sizeY = 4;
+
+        // 4 * 1
+        int[] dx = {-1, 1, 0, 0};
+        int[] dy = { 0, 0, -1, 1};
+
+        // 4 * 2
+        int[] dX = { -1, 1, -2, 2, 0, 0, 0, 0};
+        int[] dY = { 0, 0, 0, 0, -1, 1, -2, 2};*/
+
+
+
+
+
+
+
+
+
+
+
+
+        // System.out.println(Arrays.deepToString(charArr));
+        System.out.println(Arrays.deepToString(intArr));
+
+
+    }
 }
