@@ -12,7 +12,6 @@ public class w6_2493_이종환 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		int cnt = Integer.parseInt(br.readLine());
 		
-		int[] answer = new int[cnt+1];
 		int[] arr =new int[cnt+1];
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		for (int i = 1; i <= cnt; i++) {

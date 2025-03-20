@@ -56,7 +56,6 @@ public class w7_15270_이종환 {
 			for (int node: nodes.get(i)) {
 				if (visited[node]) continue;
 				
-				
 				visited[node] = true;
 				// 불필요한  for문을 안 돌리기위한 매개변수
 				dfs(cnt+2,i+1);
