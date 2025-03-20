@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class App {
+public class w9_28066_김우준 {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         String[] input = sc.nextLine().split(" ");
