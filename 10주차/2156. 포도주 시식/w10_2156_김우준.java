@@ -21,3 +21,8 @@ public class w10_2156_김우준 {
         System.out.println(sum[N]);
     }
 }
+
+// 1 -> 1
+// 2 -> 1 + 2
+// 3 -> 1 + 3 OR 2 + 3 OR 1 + 2
+// i -> i-1 OR i-2 + i OR i-3 + i-1 + i
