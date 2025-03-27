@@ -12,6 +12,7 @@ public class w10_9657_김우준 {
         arr[2] = false;
         arr[3] = true;
         arr[4] = true;
+        //
 
         for(int i = 6; i <= N; i++){
             arr[i] = !arr[i-1] || !arr[i-3] || !arr[i-4];
