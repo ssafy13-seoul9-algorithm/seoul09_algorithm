@@ -9,13 +9,12 @@ public class w10_9657_김우준 {
         boolean[] arr = N > 5 ? new boolean[N+1] : new boolean[6];
 
         arr[1] = true;
-        arr[2] = true;
-        arr[3] = false;
-        arr[4] = false;
-        arr[5] = true;
+        arr[2] = false;
+        arr[3] = true;
+        arr[4] = true;
 
         for(int i = 6; i <= N; i++){
-            arr[i] = !arr[i-1] || !arr[i-2] || !arr[i-5];
+            arr[i] = !arr[i-1] || !arr[i-3] || !arr[i-4];
         }
 
         System.out.println(arr[N] ? "SK" : "CY");
